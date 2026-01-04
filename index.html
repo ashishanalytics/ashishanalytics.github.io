@@ -3,34 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashish Kashyap | Remote Data Analyst</title>
-  <meta name="description" content="Portfolio website of Ashish Kashyap, Remote Data Analyst skilled in SQL, Python, Excel, Power BI and Tableau." />
+  <title>Ashish Kashyap — Remote Data Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of Ashish Kashyap — Remote Data Analyst skilled in SQL, Python, Excel, Power BI and Tableau. Turning business data into actionable insights." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    body{color:#0f172a;background:#ffffff;line-height:1.6}
-    header{padding:28px 14px;max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between}
-    .logo{font-weight:800;font-size:20px;color:#0f172a}
-    nav a{margin-left:18px;text-decoration:none;color:#0f172a;font-weight:500}
-    .hero{padding:60px 14px 40px;max-width:1180px;margin:auto}
-    .hero h1{font-size:34px;font-weight:800;margin-bottom:6px}
-    .hero h2{font-size:20px;font-weight:500;margin-bottom:12px;color:#334155}
-    .badge{display:inline-block;background:#e0f2fe;color:#0369a1;padding:6px 10px;border-radius:999px;font-size:13px;margin-top:4px}
-    .section{padding:34px 14px;max-width:1180px;margin:0 auto}
-    .section h3{font-size:20px;font-weight:800;margin-bottom:12px}
-    .card{border:1px solid #e5e7eb;border-radius:16px;padding:18px;margin-bottom:14px}
+    body{color:#0f172a;background:#ffffff;line-height:1.7}
+    header{padding:26px 18px;max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:900;font-size:22px;color:#0f172a}
+    nav a{margin-left:20px;text-decoration:none;color:#0f172a;font-weight:600;position:relative}
+    nav a::after{content:'';position:absolute;bottom:-4px;left:0;height:2px;width:0;background:#0369a1;transition:0.3s}
+    nav a:hover::after{width:100%}
+
+    .hero{padding:92px 18px 60px;max-width:1180px;margin:auto}
+    .hero h1{font-size:42px;font-weight:900;margin-bottom:8px}
+    .hero h2{font-size:20px;font-weight:500;margin-bottom:14px;color:#334155}
+    .badge{display:inline-block;background:#e0f2fe;color:#0369a1;padding:8px 12px;border-radius:999px;font-size:13px;margin-top:8px}
+
+    .section{padding:38px 18px;max-width:1180px;margin:0 auto}
+    .section h3{font-size:22px;font-weight:900;margin-bottom:16px;border-left:5px solid #0ea5e9;padding-left:10px}
+
+    .card{border:1px solid #e5e7eb;border-radius:16px;padding:20px;margin-bottom:16px;background:#fafafa}
+    .card h4{margin-bottom:4px}
+
     ul{margin-left:16px;margin-top:8px}
-    footer{padding:32px 14px;margin-top:30px;border-top:1px solid #e5e7eb;text-align:center;color:#475569}
-    .grid{display:grid;grid-template-columns:1fr;gap:12px}
-    @media(min-width:780px){.hero{padding-top:80px}.grid{grid-template-columns:1fr 1fr}}
+
+    footer{padding:40px 18px;margin-top:40px;border-top:1px solid #e5e7eb;text-align:center;color:#475569}
+
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:780px){
+      .hero{padding-top:110px}
+      .grid{grid-template-columns:1fr 1fr}
+      .hero h1{font-size:50px}
+    }
+
+    .pill{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background:#f1f5f9;
+      border:1px solid #e2e8f0;
+      font-size:12px;
+      margin-right:6px;
+      margin-top:6px;
+    }
+      .btn{
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:12px;
+      font-size:14px;
+      text-decoration:none;
+      background:#0ea5e9;
+      color:#fff;
+      border:1px solid #0284c7;
+      box-shadow:0 4px 12px rgba(2,132,199,.2);
+      transition:.25s;
+      margin-top:10px;
+    }
+    .btn:hover{background:#0284c7;transform:translateY(-1px)}
+
+    .card{border:1px solid #e5e7eb;border-radius:18px;padding:22px;margin-bottom:16px;background:#ffffff;box-shadow:0 10px 26px rgba(0,0,0,.05)}
+
+    .fade{opacity:0;transform:translateY(14px);transition:all .6s ease}
+    .fade.show{opacity:1;transform:none}
+
+      .gradient{
+      background:linear-gradient(135deg,#0ea5e9,#6366f1);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .toggle{
+      position:fixed;right:18px;bottom:18px;padding:10px 14px;border-radius:12px;border:1px solid #e2e8f0;background:#ffffff;box-shadow:0 10px 24px rgba(0,0,0,.12);cursor:pointer;font-size:13px
+    }
+
+    body.dark{background:#020617;color:#e5e7eb}
+    body.dark header,.dark .card{background:#020617;color:#e5e7eb;border-color:#1f2937}
+    body.dark .card{box-shadow:none;background:#020617}
+    body.dark nav a{color:#e5e7eb}
+    body.dark .section h3{border-left-color:#38bdf8}
+
+    .skillswrap{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .pill2{padding:8px 12px;border-radius:999px;border:1px solid #e2e8f0;background:#f8fafc;font-size:13px}
+
+    .gallery{display:grid;grid-template-columns:1fr;gap:12px}
+    .gallery img{width:100%;border-radius:14px;border:1px solid #e2e8f0}
+    @media(min-width:780px){.gallery{grid-template-columns:1fr 1fr}}
+
+      header.sticky{position:sticky;top:0;background:#ffffffdd;backdrop-filter:blur(8px);z-index:20;border-bottom:1px solid #e5e7eb}
+    body.dark header.sticky{background:#020617dd;border-color:#1f2937}
+    .type{color:#0ea5e9;font-weight:900}
+    .contact-form{display:grid;gap:12px;max-width:520px}
+    .contact-form input,.contact-form textarea{padding:12px;border-radius:12px;border:1px solid #e2e8f0}
+    .contact-form button{padding:12px;border-radius:12px;background:#0ea5e9;border:0;color:#fff;cursor:pointer}
   </style>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+  <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});});
+      });
+    });
+  </script>
+  <link rel="canonical" href="https://ashishanalytics.com">
+  <meta property="og:title" content="Ashish Kashyap — Remote Data Analyst Portfolio" />
+  <meta property="og:description" content="Portfolio of Ashish Kashyap — Remote Data Analyst skilled in SQL, Python, Excel, Power BI and Tableau." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ashishanalytics.com" />
+  <meta property="og:image" content="https://axzyte517.github.io/ashishanalytics/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ashish Kashyap",
+    "jobTitle": "Remote Data Analyst",
+    "url": "https://ashishanalytics.com",
+    "sameAs": [
+      "https://linkedin.com/in/ashish-data"
+    ],
+    "knowsAbout": ["SQL","Python","Power BI","Tableau","Excel","Business Intelligence","Data Cleaning","EDA","KPI Reporting"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Independent / Remote"
+    }
+  }
+  </script>
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0ea5e9" />
 </head>
 <body>
-<header>
+<script>
+  function load(){
+    document.body.classList.toggle('dark',localStorage.getItem('mode')==='dark');
+  }
+  load();
+</script>
+<script>
+  const f=()=>{document.querySelectorAll('.fade').forEach(el=>{const r=el.getBoundingClientRect();if(r.top<window.innerHeight-80)el.classList.add('show')});};window.addEventListener('scroll',f);window.addEventListener('load',f);
+</script>
+<header class="sticky">
   <div class="logo">Ashish Kashyap</div>
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
@@ -38,32 +154,44 @@
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Remote Data Analyst</h1>
-  <h2>Turning data into clear, actionable insights</h2>
-  <span class="badge">Open to Remote Roles</span>
+<section class="hero fade">
+  <h1 class="gradient">Remote Data Analyst</h1>
+  <h2>Turning data into <span class="type"></span></h2>
+  <span class="badge">Open to Remote Roles</span><br>
+  <a class="btn" href="#contact">Get in Touch</a>
 </section>
 
-<section class="section" id="about">
+<section class="section fade" id="about">
   <h3>Mission</h3>
   <div class="card">
     <p>I am a Remote Data Analyst skilled in SQL, Python, Excel and Business Intelligence tools. I focus on cleaning, analyzing and visualizing data to support business decision‑making. I enjoy building dashboards, automating reporting workflows and communicating insights in a simple and practical way.</p>
   </div>
 </section>
 
-<section class="section" id="skills">
+<section class="section fade" id="skills">
   <h3>Skills</h3>
   <div class="card">
-    <p><strong>SQL:</strong> Joins, CTEs, Window Functions<br>
-       <strong>Python:</strong> Pandas, NumPy, Matplotlib<br>
-       <strong>Excel:</strong> Pivot Tables, Lookups, Automation<br>
-       <strong>BI Tools:</strong> Power BI, Tableau<br>
-       <strong>Core Focus Areas:</strong> Data Cleaning & EDA, KPI Reporting, Dashboard Development, A/B Testing Basics
-    </p>
+    <div class="skillswrap">
+      <span class="pill2">SQL</span>
+      <span class="pill2">Python</span>
+      <span class="pill2">Pandas</span>
+      <span class="pill2">NumPy</span>
+      <span class="pill2">Matplotlib</span>
+      <span class="pill2">Power BI</span>
+      <span class="pill2">Tableau</span>
+      <span class="pill2">Excel Automation</span>
+      <span class="pill2">EDA</span>
+      <span class="pill2">A/B Testing Basics</span>
+    </div>
   </div>
 </section>
 
-<section class="section" id="projects">
+<section class="section fade" id="projects">
+  <h3>Projects</h3>
+  <div class="gallery">
+    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Data dashboard visualization">
+    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1551288049-6330c7e3ac5c" alt="Business analytics charts">
+  </div>
   <h3>Projects</h3>
   <div class="grid">
     <div class="card">
@@ -89,7 +217,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section fade">
   <h3>Education</h3>
   <div class="card">
     <p><strong>Bachelor of Data Science & AI</strong><br>Indian Institute of Technology (IIT) Guwahati</p>
@@ -106,12 +234,17 @@
   </div>
 </section>
 
-<section class="section" id="contact">
+<section class="section fade" id="contact">
   <h3>Contact</h3>
   <div class="card">
-    <p>Email: <a href="mailto:ashishkashyap@gmail.com">ashishkashyap@gmail.com</a><br>
-       LinkedIn: <a href="https://linkedin.com/in/ashish-data" target="_blank">linkedin.com/in/ashish-data</a><br>
-       Location: Remote – India</p>
+    <form class="contact-form" action="https://formsubmit.co/your@email.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <a class="btn" href="Ashish_Kashyap_Resume.pdf" target="_blank">Download Resume</a>
   </div>
 </section>
 
@@ -119,5 +252,24 @@
   © Ashish Kashyap — ashishanalytics.com
 </footer>
 
+<button class="toggle" onclick="toggleMode()">🌓 Mode</button>
+<script>
+  function toggleMode(){
+    document.body.classList.toggle('dark');
+    localStorage.setItem('mode',document.body.classList.contains('dark')?'dark':'light');
+  }
+</script>
+
+<script>
+const words=["insights","impact","clarity","results"];let i=0,j=0,del=false;setInterval(()=>{const t=document.querySelector('.type');if(!t)return;const w=words[i];if(!del){t.textContent=w.slice(0,++j);if(j===w.length)del=true}else{t.textContent=w.slice(0,--j);if(j===0){del=false;i=(i+1)%words.length;}}},110);
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
 </body>
 </html>
+
