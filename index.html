@@ -1,157 +1,228 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Ashish Kashyap — Revenue & Customer Analytics</title>
-<meta name="description" content="Revenue & Customer Analytics Analyst — SQL, Power BI, Python. IIT Guwahati. I help companies reduce churn, increase revenue and automate reporting.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashish | Data & Business Analyst</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- SEO -->
+  <meta name="description" content="Ashish – Data Analyst / Business Analyst from IIT Guwahati. Turning data into business decisions using SQL, Python and Power BI.">
+  <meta name="keywords" content="Data Analyst, Business Analyst, Product Analyst, SQL, Python, Power BI, IIT Guwahati">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui}
-body{background:#fff;color:#0f172a;line-height:1.7}
-body.dark{background:#020617;color:#e5e7eb}
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-header{max-width:1200px;margin:auto;padding:22px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#ffffffdd;backdrop-filter:blur(8px);border-bottom:1px solid #e5e7eb;z-index:10}
-body.dark header{background:#020617dd;border-color:#1f2937}
-nav a{margin-left:18px;text-decoration:none;font-weight:600;color:inherit}
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0b0f19;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
 
-.hero{max-width:1200px;margin:auto;padding:100px 22px 60px}
-.hero h1{font-size:48px;font-weight:900;background:linear-gradient(135deg,#0ea5e9,#6366f1);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero h2{margin-top:10px;font-size:20px;color:#334155}
-body.dark .hero h2{color:#cbd5f5}
-.badge{display:inline-block;margin-top:12px;padding:8px 14px;background:#e0f2fe;color:#0369a1;border-radius:999px;font-size:13px}
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
 
-.btn{display:inline-block;margin-top:18px;margin-right:10px;padding:12px 18px;border-radius:12px;background:#0ea5e9;color:#fff;text-decoration:none;font-weight:600}
-.btn:hover{background:#0284c7}
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
 
-.section{max-width:1200px;margin:auto;padding:50px 22px}
-.section h3{font-size:24px;font-weight:900;margin-bottom:16px;border-left:5px solid #0ea5e9;padding-left:10px}
+    /* HERO */
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
 
-.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:26px;margin-bottom:18px;box-shadow:0 12px 30px rgba(0,0,0,.05)}
-body.dark .card{background:#020617;border-color:#1f2937;box-shadow:none}
+    .hero span {
+      color: #2563eb;
+    }
 
-ul{margin-left:18px;margin-top:10px}
-li{margin-bottom:6px}
+    .hero p {
+      font-size: 18px;
+      color: #9ca3af;
+      max-width: 700px;
+    }
 
-.skills span{display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid #e2e8f0;margin:4px;font-size:13px}
+    .buttons {
+      margin-top: 30px;
+    }
 
-.toggle{position:fixed;right:18px;bottom:18px;padding:10px 14px;border-radius:12px;border:1px solid #e2e8f0;background:#fff;cursor:pointer}
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-right: 12px;
+      border-radius: 8px;
+      font-weight: 500;
+      border: 1px solid #2563eb;
+    }
 
-footer{text-align:center;padding:40px 20px;color:#64748b}
-</style>
+    .btn.primary {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    .btn.secondary {
+      color: #2563eb;
+    }
+
+    /* SECTION */
+    section {
+      margin-top: 100px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    /* PROJECTS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 24px;
+      border-radius: 14px;
+      border: 1px solid #1f2937;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .label {
+      color: #93c5fd;
+      font-weight: 500;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    /* CONTACT */
+    .contact p {
+      font-size: 18px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <strong>Ashish Kashyap</strong>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-    <a href="https://www.linkedin.com/in/ashish-kashyap-ab0315319?trk=contact-info" target="_blank">LinkedIn</a>
-  </nav>
-</header>
+  <!-- HERO -->
+  <div class="container hero">
+    <h1>Turning Data into <span>Business Decisions</span></h1>
+    <p>
+      Data Analyst | Business Analyst | Product Analyst <br/>
+      IIT Guwahati • SQL • Python • Power BI • Business Strategy
+    </p>
 
-<section class="hero">
-<h1>Revenue & Customer Analytics Analyst</h1>
-<h2>I help companies reduce churn, increase revenue and automate reporting using data.</h2>
-<span class="badge">Power BI • SQL • Python • IIT Guwahati</span><br>
-<a class="btn" href="#projects">View Case Studies</a>
-<a class="btn" href="https://drive.google.com/" target="_blank">View Resume</a>
-</section>
+    <div class="buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="resume.pdf" class="btn secondary">Download Resume</a>
+    </div>
+  </div>
 
-<section class="section" id="about">
-<h3>About</h3>
-<div class="card">
-<p>
-I am a <strong>Revenue & Business Analytics professional</strong> trained at <strong>IIT Guwahati</strong>.
-I specialize in turning raw business data into insights that drive <strong>growth, retention and profitability</strong>.
-</p>
-<ul>
-<li>Which customers are about to churn?</li>
-<li>Which products and regions are underperforming?</li>
-<li>Where is revenue being lost?</li>
-<li>What should leadership do next?</li>
-</ul>
-<p>My focus is not just dashboards — it is <strong>decision-making systems</strong> that teams actually use.</p>
-</div>
-</section>
+  <!-- PROJECTS -->
+  <div class="container" id="projects">
+    <h2>Featured <span style="color:#2563eb">Projects</span></h2>
 
-<section class="section" id="projects">
-<h3>Case Studies</h3>
+    <div class="projects">
+      <div class="card">
+        <h3>Sales Performance Dashboard</h3>
+        <p><span class="label">Problem:</span> Sales performance visibility was unclear for management.</p>
+        <p><span class="label">Impact:</span> Identified underperforming regions and improved data-driven decisions.</p>
+        <p><span class="label">Tools:</span> SQL, Power BI, Excel</p>
+      </div>
 
-<div class="card">
-<h4>Revenue Performance Intelligence — Power BI & SQL</h4>
-<p><em>50,000+ rows • Automated BI</em></p>
-<p><strong>Problem:</strong> Leadership had sales data but no visibility into which products and regions were driving or hurting revenue.</p>
-<ul>
-<li>Built SQL pipelines (CTEs, joins) on 50k+ records</li>
-<li>Designed KPIs for revenue, profit and growth</li>
-<li>Built Power BI dashboards with drill-downs</li>
-<li>Automated Excel-based reporting</li>
-</ul>
-<p><strong>Impact:</strong></p>
-<ul>
-<li>30–40% less manual reporting</li>
-<li>Clear view of profitable vs loss-making segments</li>
-</ul>
-</div>
+      <div class="card">
+        <h3>Customer Churn Analysis</h3>
+        <p><span class="label">Problem:</span> Company lacked clarity on why customers were churning.</p>
+        <p><span class="label">Impact:</span> Identified key churn drivers and suggested retention strategies.</p>
+        <p><span class="label">Tools:</span> Python, Pandas, EDA</p>
+      </div>
 
-<div class="card">
-<h4>Customer Churn & Revenue Risk — Python & SQL</h4>
-<p><em>Retention analytics • Revenue at risk</em></p>
-<p><strong>Problem:</strong> The company was losing customers but didn’t know who or why.</p>
-<ul>
-<li>Analyzed churn patterns using Python & SQL</li>
-<li>Built churn-risk segments</li>
-<li>Identified pricing & tenure drivers of churn</li>
-</ul>
-<p><strong>Impact:</strong></p>
-<ul>
-<li>Exposed high-risk customer groups</li>
-<li>Provided data-driven retention strategy</li>
-</ul>
-</div>
+      <div class="card">
+        <h3>Marketing Campaign Analysis</h3>
+        <p><span class="label">Problem:</span> ROI of marketing campaigns was unclear.</p>
+        <p><span class="label">Impact:</span> Highlighted high-ROI campaigns and optimized ad spend.</p>
+        <p><span class="label">Tools:</span> SQL, Excel, Statistics</p>
+      </div>
+    </div>
+  </div>
 
-<div class="card">
-<h4>Live Revenue & Churn Dashboards</h4>
-<p>Executive-style dashboards used to track revenue, growth, churn and financial risk.</p>
-<img src="dashboards.png" style="width:100%;border-radius:16px;border:1px solid #e5e7eb">
-</div>
+  <!-- SKILLS -->
+  <div class="container">
+    <h2>Skills</h2>
 
-</section>
+    <div class="skills">
+      <div class="card">
+        <h3>Business Skills</h3>
+        <ul>
+          <li>Requirement Gathering</li>
+          <li>KPI Definition</li>
+          <li>Stakeholder Communication</li>
+        </ul>
+      </div>
 
-<section class="section" id="skills">
-<h3>Skills</h3>
-<div class="card skills">
-<span>SQL</span><span>Python</span><span>Power BI</span><span>Excel</span>
-<span>Tableau</span><span>Data Cleaning</span><span>KPI Reporting</span>
-<span>Business Intelligence</span>
-</div>
-</section>
+      <div class="card">
+        <h3>Analytics Skills</h3>
+        <ul>
+          <li>Data Cleaning & EDA</li>
+          <li>SQL Querying</li>
+          <li>Dashboard Storytelling</li>
+        </ul>
+      </div>
 
-<section class="section" id="contact">
-<h3>Contact</h3>
-<div class="card">
-<p>Email: <strong>kashyapviru77@gmail.com</strong></p>
-<p>Phone: <strong>+91 94076 20358</strong></p>
-<a class="btn" href="mailto:kashyapviru77@gmail.com">Email Me</a>
-<a class="btn" href="https://www.linkedin.com/in/ashish-kashyap-ab0315319?trk=contact-info" target="_blank">LinkedIn</a>
-</div>
-</section>
+      <div class="card">
+        <h3>Tools</h3>
+        <ul>
+          <li>SQL</li>
+          <li>Python</li>
+          <li>Power BI</li>
+          <li>Excel</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<footer>
-© Ashish Kashyap — Revenue & Customer Analytics
-</footer>
+  <!-- CONTACT -->
+  <div class="container contact">
+    <h2>Contact</h2>
+    <p>
+      📧 Email: <a href="mailto:your@email.com">your@email.com</a><br/>
+      💼 LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a><br/>
+      🧠 GitHub: <a href="https://github.com/ashishanalytics" target="_blank">github.com/ashishanalytics</a>
+    </p>
+  </div>
 
-<button class="toggle" onclick="document.body.classList.toggle('dark')">🌓 Mode</button>
+  <footer>
+    © 2026 Ashish • Data & Business Analyst
+  </footer>
 
 </body>
 </html>
-
-
