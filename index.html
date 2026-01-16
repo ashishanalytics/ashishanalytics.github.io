@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ashish | Data & Business Analyst</title>
+  <title>Ashish | Data, Business & AI Automation Analyst</title>
 
   <!-- SEO -->
-  <meta name="description" content="Ashish – Data Analyst / Business Analyst from IIT Guwahati. Turning data into business decisions using SQL, Python and Power BI.">
-  <meta name="keywords" content="Data Analyst, Business Analyst, Product Analyst, SQL, Python, Power BI, IIT Guwahati">
+  <meta name="description" content="Ashish – Data, Business & AI Automation Analyst from IIT Guwahati. I build data-driven systems and AI-powered automations to improve business decisions.">
+  <meta name="keywords" content="Data Analyst, Business Analyst, AI Automation, Product Analyst, SQL, Python, Power BI, AI, IIT Guwahati">
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,115 +16,96 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #0b0f19;
+      background: radial-gradient(1200px 600px at 10% 10%, #0f172a, #020617);
       color: #e5e7eb;
       line-height: 1.6;
     }
 
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
+    a { color: #38bdf8; text-decoration: none; }
 
     .container {
-      max-width: 1100px;
+      max-width: 1150px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 80px 20px;
     }
 
     /* HERO */
     .hero h1 {
-      font-size: 48px;
+      font-size: 56px;
       font-weight: 700;
-      margin-bottom: 16px;
+      line-height: 1.15;
+      margin-bottom: 14px;
     }
 
-    .hero span {
-      color: #2563eb;
+    .accent { color: #38bdf8; }
+
+    .typing {
+      color: #a5f3fc;
+      border-right: 2px solid #38bdf8;
+      padding-right: 6px;
+      white-space: nowrap;
     }
 
     .hero p {
       font-size: 18px;
       color: #9ca3af;
-      max-width: 700px;
+      max-width: 820px;
     }
 
-    .buttons {
-      margin-top: 30px;
-    }
+    .buttons { margin-top: 34px; }
 
     .btn {
       display: inline-block;
-      padding: 12px 24px;
-      margin-right: 12px;
-      border-radius: 8px;
+      padding: 14px 28px;
+      margin-right: 14px;
+      border-radius: 12px;
       font-weight: 500;
-      border: 1px solid #2563eb;
+      border: 1px solid #38bdf8;
+      backdrop-filter: blur(6px);
     }
 
     .btn.primary {
-      background: #2563eb;
-      color: #fff;
+      background: linear-gradient(135deg, #38bdf8, #2563eb);
+      color: #020617;
+      border: none;
     }
 
-    .btn.secondary {
-      color: #2563eb;
-    }
+    .btn.secondary { color: #38bdf8; }
 
     /* SECTION */
-    section {
-      margin-top: 100px;
-    }
-
     h2 {
-      font-size: 32px;
-      margin-bottom: 30px;
+      font-size: 36px;
+      margin-bottom: 36px;
     }
 
-    /* PROJECTS */
-    .projects {
+    /* GRID */
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
+      gap: 28px;
     }
 
     .card {
-      background: #111827;
-      padding: 24px;
-      border-radius: 14px;
-      border: 1px solid #1f2937;
+      background: rgba(15, 23, 42, 0.85);
+      padding: 28px;
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      box-shadow: 0 0 0 1px rgba(56,189,248,0.05);
     }
 
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 12px;
-    }
+    .card h3 { margin-top: 0; margin-bottom: 12px; }
 
     .label {
-      color: #93c5fd;
+      color: #7dd3fc;
       font-weight: 500;
     }
 
-    /* SKILLS */
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
-
-    ul {
-      padding-left: 18px;
-    }
-
-    /* CONTACT */
-    .contact p {
-      font-size: 18px;
-    }
+    ul { padding-left: 18px; }
 
     footer {
       text-align: center;
-      padding: 40px;
-      color: #6b7280;
+      padding: 60px 20px;
+      color: #94a3b8;
       font-size: 14px;
     }
   </style>
@@ -134,95 +115,175 @@
 
   <!-- HERO -->
   <div class="container hero">
-    <h1>Turning Data into <span>Business Decisions</span></h1>
+    <h1>
+      I build <span class="accent">data & AI systems</span><br>
+      that help businesses
+      <span class="typing" id="typing"></span>
+    </h1>
+
     <p>
-      Data Analyst | Business Analyst | Product Analyst <br/>
-      IIT Guwahati • SQL • Python • Power BI • Business Strategy
+      Data Analyst | Business Analyst | AI Automation Analyst <br/>
+      IIT Guwahati • SQL • Python • Power BI • AI Systems
+    </p>
+
+    <p>
+      Focused on designing data-driven and AI-powered workflows that reduce
+      manual effort, improve decision speed, and scale business intelligence.
     </p>
 
     <div class="buttons">
-      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#projects" class="btn primary">View Work</a>
       <a href="resume.pdf" class="btn secondary">Download Resume</a>
+    </div>
+  </div>
+
+  <!-- WHY HIRE ME -->
+  <div class="container">
+    <h2>Why Hire Me</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>AI + Analytics mindset</h3>
+        <p>
+          I combine traditional data analysis with AI-powered automations
+          to build smarter, faster decision systems.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Automation-first thinking</h3>
+        <p>
+          I focus on eliminating repetitive work using scripts,
+          workflows, and AI tools instead of manual reporting.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Business ownership</h3>
+        <p>
+          I treat problems like a business owner — prioritizing impact,
+          speed, and long-term scalability.
+        </p>
+      </div>
     </div>
   </div>
 
   <!-- PROJECTS -->
   <div class="container" id="projects">
-    <h2>Featured <span style="color:#2563eb">Projects</span></h2>
+    <h2>Selected <span class="accent">Projects</span></h2>
 
-    <div class="projects">
+    <div class="grid">
       <div class="card">
-        <h3>Sales Performance Dashboard</h3>
-        <p><span class="label">Problem:</span> Sales performance visibility was unclear for management.</p>
-        <p><span class="label">Impact:</span> Identified underperforming regions and improved data-driven decisions.</p>
-        <p><span class="label">Tools:</span> SQL, Power BI, Excel</p>
+        <h3>Sales Intelligence & AI Dashboard</h3>
+        <p><span class="label">Problem:</span> Manual sales reporting and delayed insights.</p>
+        <p><span class="label">Impact:</span> Automated dashboards + analysis workflows, improving decision turnaround time by ~40%.</p>
+        <p><span class="label">Tools:</span> SQL, Power BI, Python, AI-assisted analysis</p>
       </div>
 
       <div class="card">
-        <h3>Customer Churn Analysis</h3>
-        <p><span class="label">Problem:</span> Company lacked clarity on why customers were churning.</p>
-        <p><span class="label">Impact:</span> Identified key churn drivers and suggested retention strategies.</p>
-        <p><span class="label">Tools:</span> Python, Pandas, EDA</p>
+        <h3>Customer Churn Prediction & Insights</h3>
+        <p><span class="label">Problem:</span> No early warning system for customer churn.</p>
+        <p><span class="label">Impact:</span> Identified high-risk segments and enabled proactive retention strategies.</p>
+        <p><span class="label">Tools:</span> Python, EDA, ML concepts, Automation scripts</p>
       </div>
 
       <div class="card">
-        <h3>Marketing Campaign Analysis</h3>
-        <p><span class="label">Problem:</span> ROI of marketing campaigns was unclear.</p>
-        <p><span class="label">Impact:</span> Highlighted high-ROI campaigns and optimized ad spend.</p>
-        <p><span class="label">Tools:</span> SQL, Excel, Statistics</p>
+        <h3>AI Automation for Business Reporting</h3>
+        <p><span class="label">Problem:</span> Repetitive weekly and monthly reporting.</p>
+        <p><span class="label">Impact:</span> Built automated data pipelines and AI summaries, reducing manual effort by ~60%.</p>
+        <p><span class="label">Tools:</span> Python, APIs, AI tools, Excel</p>
       </div>
     </div>
   </div>
 
-  <!-- SKILLS -->
+  <!-- CORE COMPETENCIES -->
   <div class="container">
-    <h2>Skills</h2>
+    <h2>Core Competencies</h2>
 
-    <div class="skills">
+    <div class="grid">
       <div class="card">
-        <h3>Business Skills</h3>
+        <h3>Analytics & Data</h3>
         <ul>
-          <li>Requirement Gathering</li>
-          <li>KPI Definition</li>
-          <li>Stakeholder Communication</li>
+          <li>SQL (CTEs, window functions)</li>
+          <li>Python (EDA, Pandas, automation)</li>
+          <li>Dashboarding & data storytelling</li>
         </ul>
       </div>
 
       <div class="card">
-        <h3>Analytics Skills</h3>
+        <h3>AI & Automation</h3>
         <ul>
-          <li>Data Cleaning & EDA</li>
-          <li>SQL Querying</li>
-          <li>Dashboard Storytelling</li>
+          <li>AI-powered analysis & reporting</li>
+          <li>Workflow & process automation</li>
+          <li>API-based data integrations</li>
         </ul>
       </div>
 
       <div class="card">
-        <h3>Tools</h3>
+        <h3>Business</h3>
         <ul>
-          <li>SQL</li>
-          <li>Python</li>
-          <li>Power BI</li>
-          <li>Excel</li>
-          <li>Git</li>
+          <li>KPI design & metrics</li>
+          <li>Stakeholder communication</li>
+          <li>Problem structuring</li>
         </ul>
       </div>
     </div>
   </div>
 
   <!-- CONTACT -->
-  <div class="container contact">
+  <div class="container">
     <h2>Contact</h2>
+
     <p>
-      📧 Email: <a href="mailto:your@email.com">your@email.com</a><br/>
-      💼 LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a><br/>
-      🧠 GitHub: <a href="https://github.com/ashishanalytics" target="_blank">github.com/ashishanalytics</a>
+      Open to full-time, internship, and remote roles in
+      Data, Business, Product, and AI Automation Analytics.
+    </p>
+
+    <p>
+      📧 <a href="mailto:your@email.com">your@email.com</a><br/>
+      💼 <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a><br/>
+      🧠 <a href="https://github.com/ashishanalytics" target="_blank">GitHub</a>
     </p>
   </div>
 
   <footer>
-    © 2026 Ashish • Data & Business Analyst
+    © 2026 Ashish • Data, Business & AI Automation Analyst
   </footer>
+
+  <!-- TYPING EFFECT -->
+  <script>
+    const words = [
+      "scale smarter",
+      "decide faster",
+      "automate insights",
+      "move with data",
+      "leverage AI"
+    ];
+
+    let i = 0;
+    let j = 0;
+    let currentWord = "";
+    let isDeleting = false;
+    const typingElement = document.getElementById("typing");
+
+    function typeEffect() {
+      currentWord = words[i];
+
+      if (!isDeleting) {
+        typingElement.textContent = currentWord.slice(0, j++);
+        if (j > currentWord.length + 10) isDeleting = true;
+      } else {
+        typingElement.textContent = currentWord.slice(0, j--);
+        if (j === 0) {
+          isDeleting = false;
+          i = (i + 1) % words.length;
+        }
+      }
+      setTimeout(typeEffect, 80);
+    }
+
+    typeEffect();
+  </script>
 
 </body>
 </html>
