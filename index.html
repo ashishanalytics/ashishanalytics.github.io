@@ -34,7 +34,6 @@
       color: #e0f2fe;
     }
 
-    /* HERO */
     #hero h1 {
       font-size: 58px;
       font-weight: 700;
@@ -62,9 +61,7 @@
       font-size: 18px;
     }
 
-    .hero-buttons {
-      margin-top: 34px;
-    }
+    .hero-buttons { margin-top: 34px; }
 
     .btn-primary, .btn-secondary {
       padding: 14px 28px;
@@ -84,7 +81,6 @@
       color: #e5e7eb;
     }
 
-    /* CARDS */
     .card {
       background: linear-gradient(
         180deg,
@@ -95,7 +91,6 @@
       border-radius: 20px;
       border: 1px solid rgba(96, 165, 250, 0.18);
       margin-bottom: 34px;
-      box-shadow: 0 0 0 1px rgba(30, 64, 175, 0.08);
     }
 
     .card h3 {
@@ -119,7 +114,6 @@
 <!-- HERO -->
 <section id="hero">
   <h1>Hi, I’m Ashish</h1>
-
   <h2>
     Data, Business & AI Automation Analyst —
     <span class="typing" id="typing"></span>
@@ -129,8 +123,7 @@
     I help companies make faster and smarter decisions by combining
     <strong>data analytics with AI automation</strong>.
     From churn and funnel analysis to AI-assisted reporting,
-    I focus on business impact over manual effort.
-    Backed by IIT Guwahati’s analytical rigor.
+    I focus on measurable business impact.
   </p>
 
   <div class="hero-buttons">
@@ -147,9 +140,23 @@
     <li>Power BI dashboards designed for decision-makers</li>
     <li>Hands-on experience with churn, retention, and SaaS funnels</li>
     <li>AI-automation mindset to reduce manual analysis time</li>
-    <li>Clear communication with non-technical stakeholders</li>
+    <li>Experience working with Slack and Jira in collaborative workflows</li>
     <li>IIT Guwahati background with structured problem-solving</li>
   </ul>
+</section>
+
+<!-- HOW I THINK -->
+<section id="how-i-think">
+  <h2>How I Think</h2>
+  <div class="card">
+    <ul>
+      <li>I start with the business question, not the dataset</li>
+      <li>I convert vague problems into clear metrics and KPIs</li>
+      <li>I focus on decisions and outcomes, not just dashboards</li>
+      <li>I validate insights before recommending actions</li>
+      <li>I communicate clearly with technical and non-technical teams</li>
+    </ul>
+  </div>
 </section>
 
 <!-- AI AUTOMATION -->
@@ -157,39 +164,13 @@
   <h2>AI Automation & Tools</h2>
 
   <div class="card">
-    <h3>AI-Augmented Analytics Workflow</h3>
     <ul>
-      <li><strong>Claude AI:</strong> advanced reasoning, SQL validation, insight generation</li>
-      <li><strong>Julius AI:</strong> rapid EDA, trend discovery, statistical explanations</li>
-      <li><strong>ChatGPT:</strong> analytics automation, SQL optimization, documentation</li>
-      <li><strong>Gamma AI:</strong> executive-ready presentations from analysis</li>
-      <li><strong>AI-assisted workflows:</strong> faster dashboards and clearer storytelling</li>
+      <li><strong>Claude AI:</strong> advanced reasoning and SQL validation</li>
+      <li><strong>Julius AI:</strong> rapid EDA and trend discovery</li>
+      <li><strong>ChatGPT:</strong> analytics automation and documentation</li>
+      <li><strong>Gamma AI:</strong> executive-ready presentations</li>
+      <li><strong>Collaboration:</strong> Slack for communication, Jira for task tracking</li>
     </ul>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <h2>Certifications</h2>
-
-  <div class="card">
-    <h3>Google Data Analytics Professional Certificate</h3>
-    <p>Google · Coursera</p>
-  </div>
-
-  <div class="card">
-    <h3>SQL for Data Analysis</h3>
-    <p>Advanced querying, joins, subqueries, and performance optimization</p>
-  </div>
-
-  <div class="card">
-    <h3>Python for Data Science & Analytics</h3>
-    <p>EDA, data cleaning, visualization, and business analysis</p>
-  </div>
-
-  <div class="card">
-    <h3>AI Automation & Productivity Tools</h3>
-    <p>Claude AI, Julius AI, ChatGPT, Gamma AI for analytics acceleration</p>
   </div>
 </section>
 
@@ -201,10 +182,11 @@
     <h3>Customer Churn & Revenue Retention Analysis</h3>
     <p><strong>Tools:</strong> Python, SQL, Power BI, Excel</p>
     <ul>
-      <li>Calculated churn rate and monthly revenue loss</li>
-      <li>Identified high-risk customers using usage and tenure</li>
-      <li>Delivered data-driven retention strategies</li>
+      <li>Analyzed churn patterns across tenure, usage, and support activity</li>
+      <li>Identified high-risk customer segments driving revenue loss</li>
+      <li>Estimated revenue exposure caused by customer churn</li>
     </ul>
+    <p><em>Impact:</em> Enabled data-backed retention strategies by quantifying churn drivers.</p>
     <a href="https://github.com/ashishanalytics/Customer-Churn-Analysis" target="_blank">View Project →</a>
   </div>
 
@@ -212,10 +194,11 @@
     <h3>SaaS Funnel & Cohort Analytics</h3>
     <p><strong>Tools:</strong> SQL, Python, Power BI</p>
     <ul>
-      <li>Built a complete SaaS funnel from signup to paid conversion</li>
-      <li>Measured conversion rates and drop-offs</li>
-      <li>Performed cohort-wise performance analysis</li>
+      <li>Built end-to-end SaaS funnel from signup to paid conversion</li>
+      <li>Identified high drop-off stages affecting activation</li>
+      <li>Compared cohort performance by signup month</li>
     </ul>
+    <p><em>Impact:</em> Highlighted onboarding and activation bottlenecks impacting growth.</p>
     <a href="https://github.com/ashishanalytics/saas-funnel-analysis" target="_blank">View Project →</a>
   </div>
 
@@ -223,15 +206,40 @@
     <h3>Online Retail Retention & Customer Analytics</h3>
     <p><strong>Tools:</strong> Python, SQL, Power BI</p>
     <ul>
-      <li>Customer segmentation and retention analysis</li>
-      <li>Cohort-based repeat purchase tracking</li>
-      <li>Revenue and customer value insights</li>
+      <li>Built KPIs for revenue, repeat purchase rate, and ARPU</li>
+      <li>Segmented customers by value and buying behavior</li>
+      <li>Performed cohort-based retention analysis</li>
     </ul>
+    <p><em>Impact:</em> Shifted focus from acquisition to retention-driven revenue insights.</p>
     <a href="https://github.com/ashishanalytics/online-retail-analytics" target="_blank">View Project →</a>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- CERTIFICATIONS (MOVED BELOW PROJECTS) -->
+<section id="certifications">
+  <h2>Certifications</h2>
+
+  <div class="card">
+    <h3>Google Data Analytics Professional Certificate</h3>
+    <p>Google · Coursera</p>
+  </div>
+
+  <div class="card">
+    <h3>SQL for Data Analysis</h3>
+    <p>Advanced querying and performance optimization</p>
+  </div>
+
+  <div class="card">
+    <h3>Python for Data Science & Analytics</h3>
+    <p>EDA, data cleaning, visualization, and business analysis</p>
+  </div>
+
+  <div class="card">
+    <h3>AI Automation & Productivity Tools</h3>
+    <p>Claude AI, Julius AI, ChatGPT, Gamma AI</p>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
@@ -251,7 +259,6 @@
   © 2026 Ashish Kashyap • Data, Business & AI Automation Analyst
 </footer>
 
-<!-- TYPING EFFECT -->
 <script>
   const words = [
     "automate insights",
@@ -278,7 +285,6 @@
     }
     setTimeout(typeEffect, deleting ? 60 : 90);
   }
-
   typeEffect();
 </script>
 
