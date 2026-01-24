@@ -106,7 +106,16 @@
       color: #94a3b8;
       font-size: 14px;
     }
-  </style>
+  .project-image {
+  margin: 16px 0;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(96,165,250,0.25);
+}
+ </style>
 </head>
 
 <body>
@@ -178,41 +187,71 @@
   <h2>Projects</h2>
 
   <div class="card">
-    <h3>Customer Churn & Revenue Retention Analysis</h3>
-    <p><strong>Tools:</strong> Python, SQL, Power BI, Excel</p>
-    <ul>
-      <li>Analyzed churn patterns across tenure, usage, and support activity</li>
-      <li>Identified high-risk customer segments driving revenue loss</li>
-      <li>Estimated revenue exposure caused by customer churn</li>
-    </ul>
-    <p><em>Impact:</em> Enabled data-backed retention strategies by quantifying churn drivers.</p>
-    <a href="https://github.com/ashishanalytics/Customer-Churn-Analysis" target="_blank">View Project →</a>
+  <h3>Analyzing $53K in Monthly Revenue Leakage</h3>
+
+  <div class="project-image">
+    <img src="assets/churn_dashboard.png" alt="Customer Churn Dashboard">
   </div>
 
-  <div class="card">
-    <h3>SaaS Funnel & Cohort Analytics</h3>
-    <p><strong>Tools:</strong> SQL, Python, Power BI</p>
-    <ul>
-      <li>Built end-to-end SaaS funnel from signup to paid conversion</li>
-      <li>Identified high drop-off stages affecting activation</li>
-      <li>Compared cohort performance by signup month</li>
-    </ul>
-    <p><em>Impact:</em> Highlighted onboarding and activation bottlenecks impacting growth.</p>
-    <a href="https://github.com/ashishanalytics/saas-funnel-analysis" target="_blank">View Project →</a>
-  </div>
+  <p><strong>Tools:</strong> Python, SQL, Power BI, Excel</p>
+
+  <ul>
+    <li>Identified that <strong>52.74% of customers churned</strong>, signaling major retention risk</li>
+    <li>Found Enterprise & Basic plans show higher churn rates</li>
+    <li>Discovered strong correlation between low usage and churn</li>
+  </ul>
+
+  <p><em>Impact:</em> Quantified churn-driven revenue loss to support retention strategy decisions.</p>
+
+  <a href="https://github.com/ashishanalytics/Customer-Churn-Analysis" target="_blank">
+    View Full Project →
+  </a>
+ </div>
 
   <div class="card">
-    <h3>Online Retail Retention & Customer Analytics</h3>
-    <p><strong>Tools:</strong> Python, SQL, Power BI</p>
-    <ul>
-      <li>Built KPIs for revenue, repeat purchase rate, and ARPU</li>
-      <li>Segmented customers by value and buying behavior</li>
-      <li>Performed cohort-based retention analysis</li>
-    </ul>
-    <p><em>Impact:</em> Shifted focus from acquisition to retention-driven revenue insights.</p>
-    <a href="https://github.com/ashishanalytics/online-retail-analytics" target="_blank">View Project →</a>
+  <h3>Optimizing Conversion for a $31K Revenue Funnel</h3>
+
+  <div class="project-image">
+    <img src="assets/saas_funnel_dashboard.png" alt="SaaS Funnel Dashboard">
   </div>
-</section>
+
+  <p><strong>Tools:</strong> SQL, Python, Power BI</p>
+
+  <ul>
+    <li>Only <strong>11 of 20 signups</strong> converted to paid users</li>
+    <li>Earlier signup cohorts outperform recent ones</li>
+    <li>Revenue is driven primarily by Pro users</li>
+  </ul>
+
+  <p><em>Impact:</em> Highlighted funnel drop-offs and monetization opportunities.</p>
+
+  <a href="https://github.com/ashishanalytics/saas-funnel-analysis" target="_blank">
+    View Full Project →
+  </a>
+</div>
+
+  <div class="card">
+  <h3>Scaling a $10M Global Retail Portfolio</h3>
+
+  <div class="project-image">
+    <img src="assets/retail_dashboard.png" alt="Online Retail Dashboard">
+  </div>
+
+  <p><strong>Tools:</strong> Python, SQL, Power BI</p>
+
+  <ul>
+    <li>Analyzed <strong>$10.05M revenue</strong> with 66.77% repeat customers</li>
+    <li>Top 20% customers generate majority of revenue (Pareto principle)</li>
+    <li>UK identified as the highest revenue-contributing country</li>
+  </ul>
+
+  <p><em>Impact:</em> Shifted focus from acquisition to retention-driven growth.</p>
+
+  <a href="https://github.com/ashishanalytics/online-retail-analytics" target="_blank">
+    View Full Project →
+  </a>
+</div>
+
 
 <!-- CERTIFICATIONS (MOVED BELOW PROJECTS) -->
 <section id="certifications">
