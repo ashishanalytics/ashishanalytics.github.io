@@ -1,364 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ashish Kashyap | Data, Business & AI Analyst</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashish Kashyap | Data, Business & AI Automation Analyst</title>
 
-<meta name="description" content="Ashish Kashyap – Data, Business & AI Automation Analyst from IIT Guwahati">
-<meta name="keywords" content="Data Analyst, Business Analyst, SQL, Python, Power BI, AI Automation">
+  <!-- SEO -->
+  <meta name="description" content="Ashish Kashyap – Data, Business & AI Automation Analyst from IIT Guwahati. I combine analytics with AI tools to automate insights and improve business decisions.">
+  <meta name="keywords" content="Ashish Kashyap, Data Analyst, Business Analyst, AI Automation Analyst, SQL, Python, Power BI, Claude AI, Julius AI, Gamma AI">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-* { box-sizing: border-box; scroll-behavior: smooth; }
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(1200px 600px at 15% 10%, #0b3b6e, #020617);
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
 
-body {
-  margin: 0;
-  padding-top: 70px;
-  font-family: 'Inter', sans-serif;
-  background: radial-gradient(1200px 600px at 15% 10%, #0b3b6e, #020617);
-  color: #e5e7eb;
-  line-height: 1.6;
+    a { color: #60a5fa; text-decoration: none; }
+
+    section {
+      max-width: 1150px;
+      margin: auto;
+      padding: 90px 20px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 28px;
+      color: #e0f2fe;
+    }
+
+    #hero h1 {
+      font-size: 58px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #f8fafc;
+    }
+
+    #hero h2 {
+      font-size: 22px;
+      font-weight: 500;
+      color: #93c5fd;
+      margin-bottom: 18px;
+    }
+
+    .typing {
+      color: #38bdf8;
+      border-right: 2px solid #38bdf8;
+      padding-right: 6px;
+      white-space: nowrap;
+    }
+
+    #hero p {
+      max-width: 850px;
+      color: #cbd5f5;
+      font-size: 18px;
+    }
+
+    .hero-buttons { margin-top: 34px; }
+
+    .btn-primary, .btn-secondary {
+      padding: 14px 28px;
+      border-radius: 14px;
+      margin-right: 14px;
+      font-weight: 500;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #38bdf8, #2563eb);
+      color: #020617;
+    }
+
+    .btn-secondary {
+      border: 1px solid #60a5fa;
+      color: #e5e7eb;
+    }
+
+    .card {
+      background: linear-gradient(
+        180deg,
+        rgba(2, 6, 23, 0.9),
+        rgba(15, 23, 42, 0.85)
+      );
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid rgba(96, 165, 250, 0.18);
+      margin-bottom: 34px;
+    }
+
+    .card h3 {
+      color: #7dd3fc;
+      margin-bottom: 10px;
+    }
+
+    ul { padding-left: 18px; color: #dbeafe; }
+
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+  .project-image {
+  margin: 16px 0;
 }
 
-a { color: #60a5fa; text-decoration: none; }
-
-section {
-  max-width: 1150px;
-  margin: auto;
-  padding: 90px 20px;
-}
-
-h2 {
-  font-size: 36px;
-  margin-bottom: 32px;
-  color: #e0f2fe;
-}
-
-/* ================= NAVBAR ================= */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  backdrop-filter: blur(12px);
-  background: rgba(2,6,23,0.75);
-  border-bottom: 1px solid rgba(96,165,250,0.15);
-}
-
-.nav-container {
-  max-width: 1150px;
-  margin: auto;
-  padding: 14px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-logo {
-  font-weight: 700;
-  color: #7dd3fc;
-}
-
-.nav-links a {
-  margin-left: 22px;
-  font-size: 14px;
-  color: #cbd5f5;
-}
-
-.nav-links a:hover {
-  color: #38bdf8;
-}
-
-/* ================= HERO ================= */
-#hero {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 60px;
-  align-items: center;
-}
-
-#hero h1 {
-  font-size: 56px;
-  color: #f8fafc;
-}
-
-#hero h2 {
-  font-size: 22px;
-  font-weight: 500;
-  color: #93c5fd;
-}
-
-.typing {
-  color: #38bdf8;
-  border-right: 2px solid #38bdf8;
-  padding-right: 6px;
-}
-
-#hero p {
-  max-width: 720px;
-  font-size: 18px;
-  color: #cbd5f5;
-}
-
-.hero-buttons {
-  margin-top: 32px;
-}
-
-.btn-primary, .btn-secondary {
-  padding: 14px 28px;
-  border-radius: 14px;
-  font-weight: 500;
-  display: inline-block;
-  margin-right: 14px;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, #38bdf8, #2563eb);
-  color: #020617;
-}
-
-.btn-secondary {
-  border: 1px solid #60a5fa;
-  color: #e5e7eb;
-}
-
-.hero-image img {
-  width: 100%;
-  max-width: 320px;
-  border-radius: 24px;
-  border: 1px solid rgba(96,165,250,0.3);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.45);
-}
-
-/* ================= CARD ================= */
-.card {
-  background: linear-gradient(180deg, rgba(2,6,23,0.9), rgba(15,23,42,0.85));
-  padding: 28px;
-  border-radius: 22px;
-  border: 1px solid rgba(96,165,250,0.18);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
-  border-color: rgba(56,189,248,0.4);
-}
-
-.card h3 {
-  color: #7dd3fc;
-  margin-bottom: 10px;
-}
-
-/* ================= HORIZONTAL ================= */
-.horizontal-cards {
-  display: flex;
-  gap: 28px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.horizontal-cards .card {
-  flex: 1 1 320px;
-  max-width: 360px;
-}
-
-/* ================= PROJECT IMAGE ================= */
 .project-image img {
   width: 100%;
+  height: auto;
   border-radius: 14px;
-  margin: 16px 0;
   border: 1px solid rgba(96,165,250,0.25);
 }
-
-/* ================= SCROLL REVEAL ================= */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
 }
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ================= FOOTER ================= */
-footer {
-  text-align: center;
-  padding: 60px 20px;
-  color: #94a3b8;
-  font-size: 14px;
-}
-
-/* ================= MOBILE ================= */
-@media (max-width: 900px) {
-  #hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .hero-image img {
-    margin: auto;
-  }
-}
-</style>
+ </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <div class="nav-container">
-    <div class="nav-logo">Ashish.dev</div>
-    <div class="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
 <!-- HERO -->
 <section id="hero">
-  <div class="reveal">
-    <h1>Hi, I’m Ashish</h1>
-    <h2>Data, Business & AI Automation Analyst — <span class="typing" id="typing"></span></h2>
-    <p>
-      I help companies make faster and smarter decisions by combining
-      <strong>data analytics with AI automation</strong>.
-      I work on churn, funnels, retention, and revenue optimization using SQL, Python & Power BI.
-    </p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="Ashish_Kashyap_Data_Analyst_Resume.pdf" class="btn-secondary" download>Download Resume</a>
-    </div>
-  </div>
+  <h1>Hi, I’m Ashish</h1>
+  <h2>
+    Data, Business & AI Automation Analyst —
+    <span class="typing" id="typing"></span>
+  </h2>
 
-  <div class="hero-image reveal">
-    <img src="assets/profile.jpg" alt="Ashish Kashyap">
+  <p>
+    I help companies make faster and smarter decisions by combining
+    <strong>data analytics with AI automation</strong>.
+    “I help businesses reduce churn, increase revenue, and optimize funnels using SQL, Python, and Power BI.”
+  </p>
+
+ <div class="hero-buttons">
+  <a href="#projects" class="btn-primary">View Projects</a>
+
+  <a href="Ashish_Kashyap_Data_Analyst_Resume.pdf"
+     class="btn-secondary"
+     download>
+     Download Resume
+  </a>
+</div>
+</section>
+
+<!-- WHY HIRE ME -->
+<section id="why-hire-me">
+  <h2>Why Hire Me</h2>
+  <ul>
+    <li>Strong SQL for business, product, and growth analytics</li>
+    <li>Power BI dashboards designed for decision-makers</li>
+    <li>Hands-on experience with churn, retention, and SaaS funnels</li>
+    <li>AI-automation mindset to reduce manual analysis time</li>
+    <li>Experience working with Slack and Jira in collaborative workflows</li>
+    <li>IIT Guwahati background with structured problem-solving</li>
+    <li>Proven ability to translate messy data into clear actions for non-technical stakeholders</li>
+</section>
+
+<!--HOW I SOLVE BUISNESS PROBLEMS -->
+<section id="how-i-think">
+  <h2>How I Think</h2>
+  <div class="card">
+    <ul>
+      <li>I start with the business question, not the dataset</li>
+      <li>I convert vague problems into clear metrics and KPIs</li>
+      <li>I focus on decisions and outcomes, not just dashboards</li>
+      <li>I validate insights before recommending actions</li>
+      <li>I communicate clearly with technical and non-technical teams</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ANALYTICS & PRODUCTIVITY TOOLS (Used to accelerate analysis and documentation — not replace core SQL/Python work.) -->
+<section id="ai-automation">
+  <h2>AI Automation & Tools</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Claude AI:</strong> advanced reasoning and SQL validation</li>
+      <li><strong>Julius AI:</strong> rapid EDA and trend discovery</li>
+      <li><strong>ChatGPT:</strong> analytics automation and documentation</li>
+      <li><strong>Gamma AI:</strong> executive-ready presentations</li>
+      <li><strong>Collaboration:</strong> Slack for communication, Jira for task tracking</li>
+    </ul>
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-  <h2 class="reveal">Projects</h2>
-  <div class="horizontal-cards">
+  <h2>Projects</h2>
 
-    <div class="card reveal">
-      <h3>$53K Monthly Revenue Leakage</h3>
-      <div class="project-image">
-        <img src="assets/churn_dashboard.png">
-      </div>
-      <p><strong>Tools:</strong> SQL, Python, Power BI</p>
-      <ul>
-        <li>52.7% churn identified</li>
-        <li>Low usage → churn</li>
-        <li>Plan-level risk found</li>
-      </ul>
-      <a href="https://github.com/ashishanalytics/Customer-Churn-Analysis" target="_blank">View Project →</a>
-    </div>
+  <div class="card">
+  <h3>Analyzing $53K in Monthly Revenue Leakage</h3>
 
-    <div class="card reveal">
-      <h3>$31K SaaS Funnel Optimization</h3>
-      <div class="project-image">
-        <img src="assets/saas_funnel_dashboard.png">
-      </div>
-      <p><strong>Tools:</strong> SQL, Python, Power BI</p>
-      <ul>
-        <li>Signup → paid drop-off</li>
-        <li>Cohort decay</li>
-        <li>Revenue drivers found</li>
-      </ul>
-      <a href="https://github.com/ashishanalytics/saas-funnel-analysis" target="_blank">View Project →</a>
-    </div>
-
-    <div class="card reveal">
-      <h3>$10M Retail Analytics</h3>
-      <div class="project-image">
-        <img src="assets/retail_dashboard.png">
-      </div>
-      <p><strong>Tools:</strong> SQL, Python, Power BI</p>
-      <ul>
-        <li>66% repeat customers</li>
-        <li>Pareto validated</li>
-        <li>Retention focus</li>
-      </ul>
-      <a href="https://github.com/ashishanalytics/online-retail-analytics" target="_blank">View Project →</a>
-    </div>
-
+  <div class="project-image">
+    <img src="assets/churn_dashboard .png" alt="Customer Churn Dashboard">
   </div>
-</section>
 
-<!-- CERTIFICATIONS -->
+  <p><strong>Tools:</strong> Python, SQL, Power BI, Excel</p>
+
+  <ul>
+    <li>Identified that <strong>52.74% of customers churned</strong>, signaling major retention risk</li>
+    <li>Found Enterprise & Basic plans show higher churn rates</li>
+    <li>Discovered strong correlation between low usage and churn</li>
+  </ul>
+
+  <p><em>Impact:</em> Quantified churn-driven revenue loss to support retention strategy decisions.</p>
+
+  <a href="https://github.com/ashishanalytics/Customer-Churn-Analysis" target="_blank">
+    View Full Project →
+  </a>
+ </div>
+
+  <div class="card">
+  <h3>Optimizing Conversion for a $31K Revenue Funnel</h3>
+
+  <div class="project-image">
+    <img src="assets/saas_funnel_dashboard.png" alt="SaaS Funnel Dashboard">
+  </div>
+
+  <p><strong>Tools:</strong> SQL, Python, Power BI</p>
+
+  <ul>
+    <li>Only <strong>11 of 20 signups</strong> converted to paid users</li>
+    <li>Earlier signup cohorts outperform recent ones</li>
+    <li>Revenue is driven primarily by Pro users</li>
+  </ul>
+
+  <p><em>Impact:</em> Highlighted funnel drop-offs and monetization opportunities.</p>
+
+  <a href="https://github.com/ashishanalytics/saas-funnel-analysis" target="_blank">
+    View Full Project →
+  </a>
+</div>
+
+  <div class="card">
+  <h3>Scaling a $10M Global Retail Portfolio</h3>
+
+  <div class="project-image">
+    <img src="assets/retail_dashboard.png" alt="Online Retail Dashboard">
+  </div>
+
+  <p><strong>Tools:</strong> Python, SQL, Power BI</p>
+
+  <ul>
+    <li>Analyzed <strong>$10.05M revenue</strong> with 66.77% repeat customers</li>
+    <li>Top 20% customers generate majority of revenue (Pareto principle)</li>
+    <li>UK identified as the highest revenue-contributing country</li>
+  </ul>
+
+  <p><em>Impact:</em> Shifted focus from acquisition to retention-driven growth.</p>
+
+  <a href="https://github.com/ashishanalytics/online-retail-analytics" target="_blank">
+    View Full Project →
+  </a>
+</div>
+
+
+<!-- CERTIFICATIONS (MOVED BELOW PROJECTS) -->
 <section id="certifications">
-  <h2 class="reveal">Certifications</h2>
-  <div class="horizontal-cards">
+  <h2>Certifications</h2>
 
-    <div class="card reveal">
-      <h3>Google Data Analytics</h3>
-      <p>Coursera</p>
-    </div>
+  <div class="card">
+    <h3>Google Data Analytics Professional Certificate</h3>
+    <p>Google · Coursera</p>
+  </div>
 
-    <div class="card reveal">
-      <h3>SQL for Data Analysis</h3>
-      <p>Advanced querying</p>
-    </div>
+  <div class="card">
+    <h3>SQL for Data Analysis</h3>
+    <p>Advanced querying and performance optimization</p>
+  </div>
 
-    <div class="card reveal">
-      <h3>Python for Analytics</h3>
-      <p>EDA & insights</p>
-    </div>
+  <div class="card">
+    <h3>Python for Data Science & Analytics</h3>
+    <p>EDA, data cleaning, visualization, and business analysis</p>
+  </div>
 
-    <div class="card reveal">
-      <h3>AI Automation Tools</h3>
-      <p>Claude, Julius, ChatGPT</p>
-    </div>
-
+  <div class="card">
+    <h3>AI Automation & Productivity Tools</h3>
+    <p>Claude AI, Julius AI, ChatGPT, Gamma AI</p>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <h2 class="reveal">Contact</h2>
-  <p class="reveal">
-    📧 <a href="mailto:akkashyap056@gmail.com">akkashyap056@gmail.com</a><br>
-    💼 <a href="https://linkedin.com/in/ashish-kashyap-ab0315319" target="_blank">LinkedIn</a><br>
+  <h2>Contact</h2>
+  <p>
+    If you are hiring a Data or Business Analyst who can also leverage AI
+    to work faster and smarter, let’s connect.
+  </p>
+
+  <p>
+    📧 <a href="mailto:akkashyap056@gmail.com">akkashyap056@gmail.com</a><br/>
+    💼 <a href="https://www.linkedin.com/in/ashish-kashyap-ab0315319/" target="_blank">LinkedIn</a><br/>
     🧠 <a href="https://github.com/ashishanalytics" target="_blank">GitHub</a>
   </p>
+  📄 <a href="Ashish_Kashyap_Data_Analyst_Resume.pdf" download>
+Resume (PDF)
+</a><br/>
 </section>
 
 <footer>
-  <p><strong>Ashish Kashyap</strong></p>
-  <p>Data • Business • AI Automation Analyst</p>
-  <p>Building analytics systems that drive revenue</p>
+  © 2026 Ashish Kashyap • Data, Business & AI Automation Analyst
 </footer>
 
 <script>
-/* Typing Effect */
-const words=["automate insights","reduce churn","optimize funnels","scale smarter","drive growth with AI"];
-let i=0,j=0,del=false;
-const el=document.getElementById("typing");
-function type(){
-  const w=words[i];
-  el.textContent=del?w.slice(0,--j):w.slice(0,++j);
-  if(j===w.length) setTimeout(()=>del=true,1200);
-  if(j===0&&del){del=false;i=(i+1)%words.length;}
-  setTimeout(type,del?60:90);
-}
-type();
+  const words = [
+    "automate insights",
+    "reduce churn",
+    "optimize funnels",
+    "scale smarter",
+    "drive growth with AI"
+  ];
 
-/* Scroll Reveal */
-const reveals=document.querySelectorAll(".reveal");
-window.addEventListener("scroll",()=>{
-  reveals.forEach(el=>{
-    const top=el.getBoundingClientRect().top;
-    if(top<window.innerHeight-100) el.classList.add("active");
-  });
-});
+  let i = 0, j = 0, deleting = false;
+  const el = document.getElementById("typing");
+
+  function typeEffect() {
+    const word = words[i];
+    if (!deleting) {
+      el.textContent = word.slice(0, ++j);
+      if (j === word.length) setTimeout(() => deleting = true, 1200);
+    } else {
+      el.textContent = word.slice(0, --j);
+      if (j === 0) {
+        deleting = false;
+        i = (i + 1) % words.length;
+      }
+    }
+    setTimeout(typeEffect, deleting ? 60 : 90);
+  }
+  typeEffect();
 </script>
 
 </body>
 </html>
+ 
 
