@@ -5,70 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ashish Kashyap | Data, Business & AI Automation Analyst</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Ashish Kashyap – Data, Business & AI Automation Analyst from IIT Guwahati. I combine analytics with AI tools to automate insights and improve business decisions.">
-  <meta name="keywords" content="Ashish Kashyap, Data Analyst, Business Analyst, AI Automation Analyst, SQL, Python, Power BI, Claude AI, Julius AI, Gamma AI">
+  <meta name="description" content="Ashish Kashyap – Data, Business & AI Automation Analyst from IIT Guwahati. I combine analytics with AI tools to automate insights.">
+  <meta name="keywords" content="Ashish Kashyap, Data Analyst, Business Analyst, AI Automation, SQL, Python, Power BI, IIT Guwahati">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --bg-dark: #020617;
+      --accent-blue: #38bdf8;
+      --text-gray: #cbd5f5;
+      --card-border: rgba(96, 165, 250, 0.18);
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background: radial-gradient(1200px 600px at 15% 10%, #0b3b6e, #020617);
       color: #e5e7eb;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
 
-    a { color: #60a5fa; text-decoration: none; }
+    a { color: var(--accent-blue); text-decoration: none; transition: 0.3s; }
+    a:hover { filter: brightness(1.2); }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(2, 6, 23, 0.85);
+      backdrop-filter: blur(12px);
+      padding: 15px 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(96, 165, 250, 0.1);
+    }
+    .nav-container {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .nav-logo { font-weight: 700; font-size: 1.2rem; color: #fff; }
+    .nav-links a { margin-left: 20px; font-size: 0.9rem; color: var(--text-gray); }
 
     section {
       max-width: 1150px;
       margin: auto;
-      padding: 90px 20px;
+      padding: 80px 20px;
     }
 
     h2 {
-      font-size: 36px;
+      font-size: clamp(28px, 5vw, 36px);
       margin-bottom: 28px;
       color: #e0f2fe;
     }
 
     #hero h1 {
-      font-size: 58px;
-      font-weight: 700;
+      font-size: clamp(40px, 8vw, 64px);
+      font-weight: 800;
       margin-bottom: 12px;
       color: #f8fafc;
-    }
-
-    #hero h2 {
-      font-size: 22px;
-      font-weight: 500;
-      color: #93c5fd;
-      margin-bottom: 18px;
+      letter-spacing: -1px;
     }
 
     .typing {
-      color: #38bdf8;
-      border-right: 2px solid #38bdf8;
+      color: var(--accent-blue);
+      border-right: 2px solid var(--accent-blue);
       padding-right: 6px;
-      white-space: nowrap;
     }
 
-    #hero p {
-      max-width: 850px;
-      color: #cbd5f5;
-      font-size: 18px;
+    .card {
+      background: linear-gradient(180deg, rgba(2, 6, 23, 0.7), rgba(15, 23, 42, 0.8));
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid var(--card-border);
+      margin-bottom: 30px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .hero-buttons { margin-top: 34px; }
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(56, 189, 248, 0.4);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .card h3 { color: #7dd3fc; margin-top: 0; }
 
     .btn-primary, .btn-secondary {
       padding: 14px 28px;
-      border-radius: 14px;
-      margin-right: 14px;
-      font-weight: 500;
+      border-radius: 12px;
+      margin-right: 12px;
+      margin-bottom: 10px;
+      font-weight: 600;
       display: inline-block;
+      transition: 0.3s;
     }
 
     .btn-primary {
@@ -81,243 +113,197 @@
       color: #e5e7eb;
     }
 
-    .card {
-      background: linear-gradient(
-        180deg,
-        rgba(2, 6, 23, 0.9),
-        rgba(15, 23, 42, 0.85)
-      );
-      padding: 30px;
-      border-radius: 20px;
-      border: 1px solid rgba(96, 165, 250, 0.18);
-      margin-bottom: 34px;
+    .project-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      margin: 20px 0;
     }
 
-    .card h3 {
-      color: #7dd3fc;
-      margin-bottom: 10px;
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      section { padding: 50px 20px; }
+      #hero h1 { line-height: 1.1; }
+      .btn-primary, .btn-secondary { width: 100%; text-align: center; box-sizing: border-box; }
     }
-
-    ul { padding-left: 18px; color: #dbeafe; }
 
     footer {
       text-align: center;
-      padding: 60px 20px;
-      color: #94a3b8;
-      font-size: 14px;
+      padding: 40px 20px;
+      color: #64748b;
+      border-top: 1px solid rgba(255,255,255,0.05);
     }
-  .project-image {
-  margin: 16px 0;
-}
 
-.project-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 14px;
-  border: 1px solid rgba(96,165,250,0.25);
-}
-.resume-btn {
-  display: inline-block;
-  margin-top: 20px;
-}
- </style>
+    ul li { margin-bottom: 10px; color: #dbeafe; }
+  </style>
 </head>
 
 <body>
 
-<!-- HERO -->
+<nav>
+  <div class="nav-container">
+    <div class="nav-logo">Ashish Kashyap</div>
+    <div class="nav-links">
+      <a href="#why-hire-me">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
 <section id="hero">
   <h1>Hi, I’m Ashish</h1>
-  <h2>
-    Data, Business & AI Automation Analyst —
+  <h2 style="font-size: 22px; font-weight: 500; color: #93c5fd; margin-bottom: 20px;">
+    Data, Business & AI Automation Analyst — 
     <span class="typing" id="typing"></span>
   </h2>
 
-  <p>
+  <p style="max-width: 850px; font-size: 19px; color: var(--text-gray);">
     I help companies make faster and smarter decisions by combining
     <strong>data analytics with AI automation</strong>.
-    “I help businesses reduce churn, increase revenue, and optimize funnels using SQL, Python, and Power BI.”
+    I help businesses reduce churn, increase revenue, and optimize funnels using SQL, Python, and Power BI.
   </p>
 
- <div class="hero-buttons">
-  <a href="#projects" class="btn-primary">View Projects</a>
-
-  <a href="Ashish_Kashyap_Data_Analyst_Resume.pdf"
-     class="btn-secondary"
-     download>
-     Download Resume
-  </a>
-</div>
+  <div style="margin-top: 40px;">
+    <a href="#projects" class="btn-primary">View Projects</a>
+    <a href="Ashish_Kashyap_Data_Analyst_Resume.pdf" class="btn-secondary" download>Download Resume</a>
+  </div>
 </section>
 
-<!-- WHY HIRE ME -->
 <section id="why-hire-me">
   <h2>Why Hire Me</h2>
-  <ul>
-    <li>Strong SQL for business, product, and growth analytics</li>
-    <li>Power BI dashboards designed for decision-makers</li>
-    <li>Hands-on experience with churn, retention, and SaaS funnels</li>
-    <li>AI-automation mindset to reduce manual analysis time</li>
-    <li>Experience working with Slack and Jira in collaborative workflows</li>
-    <li>IIT Guwahati background with structured problem-solving</li>
-    <li>Proven ability to translate messy data into clear actions for non-technical stakeholders</li>
-</section>
-
-<!--HOW I SOLVE BUISNESS PROBLEMS -->
-<section id="how-i-think">
-  <h2>How I Think</h2>
   <div class="card">
-    <ul>
-      <li>I start with the business question, not the dataset</li>
-      <li>I convert vague problems into clear metrics and KPIs</li>
-      <li>I focus on decisions and outcomes, not just dashboards</li>
-      <li>I validate insights before recommending actions</li>
-      <li>I communicate clearly with technical and non-technical teams</li>
+    <ul style="padding-left: 20px;">
+      <li>Strong SQL for business, product, and growth analytics</li>
+      <li>Power BI dashboards designed for decision-makers</li>
+      <li>Hands-on experience with churn, retention, and SaaS funnels</li>
+      <li>AI-automation mindset to reduce manual analysis time</li>
+      <li>Experience working with Slack and Jira in collaborative workflows</li>
+      <li><strong>IIT Guwahati background</strong> with structured problem-solving</li>
+      <li>Proven ability to translate messy data into clear actions for non-technical stakeholders</li>
     </ul>
   </div>
 </section>
 
-<!-- ANALYTICS & PRODUCTIVITY TOOLS (Used to accelerate analysis and documentation — not replace core SQL/Python work.) -->
+<section id="how-i-think">
+  <h2>How I Think</h2>
+  <div class="card">
+    <ul style="list-style: none; padding: 0;">
+      <li>🎯 <strong>I start with the business question, not the dataset</strong></li>
+      <li>📊 <strong>I convert vague problems into clear metrics and KPIs</strong></li>
+      <li>💡 <strong>I focus on decisions and outcomes, not just dashboards</strong></li>
+      <li>✅ <strong>I validate insights before recommending actions</strong></li>
+      <li>🗣️ <strong>I communicate clearly with technical and non-technical teams</strong></li>
+    </ul>
+  </div>
+</section>
+
 <section id="ai-automation">
   <h2>AI Automation & Tools</h2>
   <div class="card">
-    <ul>
-      <li><strong>Claude AI:</strong> advanced reasoning and SQL validation</li>
-      <li><strong>Julius AI:</strong> rapid EDA and trend discovery</li>
-      <li><strong>ChatGPT:</strong> analytics automation and documentation</li>
-      <li><strong>Gamma AI:</strong> executive-ready presentations</li>
+    <p style="margin-bottom: 15px; color: #93c5fd;">Accelerating analysis and documentation — not replacing core SQL/Python work.</p>
+    <ul style="padding-left: 20px;">
+      <li><strong>Claude AI:</strong> Advanced reasoning and SQL validation</li>
+      <li><strong>Julius AI:</strong> Rapid EDA and trend discovery</li>
+      <li><strong>ChatGPT:</strong> Analytics automation and documentation</li>
+      <li><strong>Gamma AI:</strong> Executive-ready presentations</li>
       <li><strong>Collaboration:</strong> Slack for communication, Jira for task tracking</li>
     </ul>
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
 
   <div class="card">
-  <h3>Analyzing $53K in Monthly Revenue Leakage</h3>
-
-  <div class="project-image">
-    <img src="assets/churn_dashboard .png" alt="Customer Churn Dashboard">
-  </div>
-
-  <p><strong>Tools:</strong> Python, SQL, Power BI, Excel</p>
-
-  <ul>
-    <li>Identified that <strong>52.74% of customers churned</strong>, signaling major retention risk</li>
-    <li>Found Enterprise & Basic plans show higher churn rates</li>
-    <li>Discovered strong correlation between low usage and churn</li>
-  </ul>
-
-  <p><em>Impact:</em> Quantified churn-driven revenue loss to support retention strategy decisions.</p>
-
-  <a href="https://github.com/ashishanalytics/Customer-Churn-Analysis" target="_blank">
-    View Full Project →
-  </a>
- </div>
-
-  <div class="card">
-  <h3>Optimizing Conversion for a $31K Revenue Funnel</h3>
-
-  <div class="project-image">
-    <img src="assets/saas_funnel_dashboard.png" alt="SaaS Funnel Dashboard">
-  </div>
-
-  <p><strong>Tools:</strong> SQL, Python, Power BI</p>
-
-  <ul>
-    <li>Only <strong>11 of 20 signups</strong> converted to paid users</li>
-    <li>Earlier signup cohorts outperform recent ones</li>
-    <li>Revenue is driven primarily by Pro users</li>
-  </ul>
-
-  <p><em>Impact:</em> Highlighted funnel drop-offs and monetization opportunities.</p>
-
-  <a href="https://github.com/ashishanalytics/saas-funnel-analysis" target="_blank">
-    View Full Project →
-  </a>
-</div>
-
-  <div class="card">
-  <h3>Scaling a $10M Global Retail Portfolio</h3>
-
-  <div class="project-image">
-    <img src="assets/retail_dashboard.png" alt="Online Retail Dashboard">
-  </div>
-
-  <p><strong>Tools:</strong> Python, SQL, Power BI</p>
-
-  <ul>
-    <li>Analyzed <strong>$10.05M revenue</strong> with 66.77% repeat customers</li>
-    <li>Top 20% customers generate majority of revenue (Pareto principle)</li>
-    <li>UK identified as the highest revenue-contributing country</li>
-  </ul>
-
-  <p><em>Impact:</em> Shifted focus from acquisition to retention-driven growth.</p>
-
-  <a href="https://github.com/ashishanalytics/online-retail-analytics" target="_blank">
-    View Full Project →
-  </a>
-</div>
-
-
-<!-- CERTIFICATIONS (MOVED BELOW PROJECTS) -->
-<section id="certifications">
-  <h2>Certifications</h2>
-
-  <div class="card">
-    <h3>Google Data Analytics Professional Certificate</h3>
-    <p>Google · Coursera</p>
+    <h3>Analyzing $53K in Monthly Revenue Leakage</h3>
+    <div class="project-image">
+      <img src="assets/churn_dashboard .png" alt="Customer Churn Dashboard">
+    </div>
+    <p><strong>Tools:</strong> Python, SQL, Power BI, Excel</p>
+    <ul>
+      <li>Identified that <strong>52.74% of customers churned</strong>, signaling major retention risk</li>
+      <li>Found Enterprise & Basic plans show higher churn rates</li>
+      <li>Discovered strong correlation between low usage and churn</li>
+    </ul>
+    <p><em>Impact:</em> Quantified churn-driven revenue loss to support retention strategy decisions.</p>
+    <a href="https://github.com/ashishanalytics/Customer-Churn-Analysis" target="_blank">View Full Project →</a>
   </div>
 
   <div class="card">
-    <h3>SQL for Data Analysis</h3>
-    <p>Advanced querying and performance optimization</p>
+    <h3>Optimizing Conversion for a $31K Revenue Funnel</h3>
+    <div class="project-image">
+      <img src="assets/saas_funnel_dashboard.png" alt="SaaS Funnel Dashboard">
+    </div>
+    <p><strong>Tools:</strong> SQL, Python, Power BI</p>
+    <ul>
+      <li>Only <strong>11 of 20 signups</strong> converted to paid users</li>
+      <li>Earlier signup cohorts outperform recent ones</li>
+      <li>Revenue is driven primarily by Pro users</li>
+    </ul>
+    <p><em>Impact:</em> Highlighted funnel drop-offs and monetization opportunities.</p>
+    <a href="https://github.com/ashishanalytics/saas-funnel-analysis" target="_blank">View Full Project →</a>
   </div>
 
   <div class="card">
-    <h3>Python for Data Science & Analytics</h3>
-    <p>EDA, data cleaning, visualization, and business analysis</p>
-  </div>
-
-  <div class="card">
-    <h3>AI Automation & Productivity Tools</h3>
-    <p>Claude AI, Julius AI, ChatGPT, Gamma AI</p>
+    <h3>Scaling a $10M Global Retail Portfolio</h3>
+    <div class="project-image">
+      <img src="assets/retail_dashboard.png" alt="Online Retail Dashboard">
+    </div>
+    <p><strong>Tools:</strong> Python, SQL, Power BI</p>
+    <ul>
+      <li>Analyzed <strong>$10.05M revenue</strong> with 66.77% repeat customers</li>
+      <li>Top 20% customers generate majority of revenue (Pareto principle)</li>
+      <li>UK identified as the highest revenue-contributing country</li>
+    </ul>
+    <p><em>Impact:</em> Shifted focus from acquisition to retention-driven growth.</p>
+    <a href="https://github.com/ashishanalytics/online-retail-analytics" target="_blank">View Full Project →</a>
   </div>
 </section>
 
-<!-- CONTACT -->
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+    <div class="card" style="margin-bottom: 0;">
+      <h3>Google Data Analytics</h3>
+      <p>Google · Coursera</p>
+    </div>
+    <div class="card" style="margin-bottom: 0;">
+      <h3>SQL for Data Analysis</h3>
+      <p>Advanced querying & optimization</p>
+    </div>
+    <div class="card" style="margin-bottom: 0;">
+      <h3>Python for Data Science</h3>
+      <p>EDA, Visualization & Business Analysis</p>
+    </div>
+    <div class="card" style="margin-bottom: 0;">
+      <h3>AI Automation Tools</h3>
+      <p>Claude AI, Julius AI, Gamma AI</p>
+    </div>
+  </div>
+</section>
+
 <section id="contact">
   <h2>Contact</h2>
-  <p>
-    If you are hiring a Data or Business Analyst who can also leverage AI
-    to work faster and smarter, let’s connect.
-  </p>
-
-  <p>
-    📧 <a href="mailto:akkashyap056@gmail.com">akkashyap056@gmail.com</a><br/>
-    💼 <a href="https://www.linkedin.com/in/ashish-kashyap-ab0315319/" target="_blank">LinkedIn</a><br/>
-    🧠 <a href="https://github.com/ashishanalytics" target="_blank">GitHub</a>
-  </p>
-  📄 <a href="Ashish_Kashyap_Data_Analyst_Resume.pdf" download>
-Resume (PDF)
-</a><br/>
+  <div class="card" style="text-align: center;">
+    <p style="font-size: 18px;">If you are hiring a Data or Business Analyst who can leverage AI to work faster and smarter, let’s connect.</p>
+    <p style="font-size: 1.1rem; margin-top: 20px;">
+      📧 <a href="mailto:akkashyap056@gmail.com">akkashyap056@gmail.com</a> | 
+      💼 <a href="https://www.linkedin.com/in/ashish-kashyap-ab0315319/" target="_blank">LinkedIn</a> | 
+      🧠 <a href="https://github.com/ashishanalytics" target="_blank">GitHub</a>
+    </p>
+  </div>
 </section>
 
 <footer>
-  © 2026 Ashish Kashyap • Data, Business & AI Automation Analyst
+  © 2026 Ashish Kashyap • IIT Guwahati • Data, Business & AI Automation Analyst
 </footer>
 
 <script>
-  const words = [
-    "automate insights",
-    "reduce churn",
-    "optimize funnels",
-    "scale smarter",
-    "drive growth with AI"
-  ];
-
+  const words = ["automate insights", "reduce churn", "optimize funnels", "scale smarter", "drive growth with AI"];
   let i = 0, j = 0, deleting = false;
   const el = document.getElementById("typing");
 
@@ -333,12 +319,10 @@ Resume (PDF)
         i = (i + 1) % words.length;
       }
     }
-    setTimeout(typeEffect, deleting ? 60 : 90);
+    setTimeout(typeEffect, deleting ? 50 : 80);
   }
   typeEffect();
 </script>
 
 </body>
 </html>
- 
-
